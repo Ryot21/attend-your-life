@@ -1,0 +1,660 @@
+@charset "utf-8";
+/*
+Theme Name: attendlife
+Theme URI: ★ http://attend-life.dev-webitch.xyz/ ★
+Template: lightning
+Description: ★ 社団法人アテンドライフ ★
+Author: ★ RyotaMaeda ★
+Tags: 
+Version: 0.1.2
+*/
+
+/* ------------------- 基本設定 ------------------------- */
+	@media (max-width: 576px){/* スマホ */
+		.PC-br { display: none; }
+		.SP-pb { padding-bottom: 30px; }
+	}
+	@media (min-width: 576px){/* タブレット以上 */
+		.SP-br { display: none; }
+		.SP-pb { display: none; }
+	}
+
+	.site-body {
+		padding: 0 15px ;
+	}
+	.contact-btn .btn-primary {
+		background: #ffffff;
+		color: #00C440;
+		border-color: #00C440;
+		transition: ease .4s;
+	}
+	.contact-btn .btn-primary:hover {
+		background: #00C440;
+		color: #ffffff;
+		transition: ease .4s;
+	}
+
+/* --------- 共通・フッター上部の「page-contact」 --------------- */
+	.page-contact {
+		width: 100%;
+		/* background: #cccccc; */
+	}
+	.page-contact-container {
+		display: block;
+		width: 280px;
+		color: #00C440;
+		background: #ffffff;
+		border: 2px solid #00C440;
+		border-radius: 15px;
+		padding: 10px 15px;
+		margin: 0 auto 90px;
+		box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+		transition: ease .4s;
+	}
+	.page-contact-container:hover {
+		color: #ffffff;
+		background: #00C440;
+		transition: ease .4s;
+	}
+	.page-contact-container:hover p span::before {
+		color: #ffffff;
+		transition: ease .4s;
+	}
+	.page-contact-container p {
+		font-size: 16px;
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+		border-top: 0;
+		border-bottom: 0;
+		text-align: center;
+		line-height: 2;
+	}
+	.page-contact-container p span {
+		position: relative;
+		/* display: inline-block; */
+		/* height: 25px; */
+		padding: 0 15px;
+	}
+	.page-contact-container p span::before {
+		font-family: 'Font Awesome 5 Brands';
+		content: '\f3c0';
+		font-weight: 400;
+		font-size: 25px;
+		color: #00C440;
+		position: absolute;
+		width: 25px;
+		top: 50%;
+		left: 65%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		text-align: center;
+		transition: ease .4s;
+	}
+	@media (min-width: 1200px) {
+		.page-contact-container {
+			max-width: 1140px;
+		}
+	}
+	@media (min-width: 992px) {
+		.page-contact-container {
+			max-width: 960px;
+		}
+	}
+	@media (min-width: 768px) {
+		.page-contact-container {
+			max-width: 665px;
+		}
+		.page-contact-container h2 {
+			font-size: 1.75rem;
+		}
+	}
+	@media (min-width: 576px) {
+		.page-contact-container {
+			width: auto;
+			margin: 0 auto 110px;
+		}
+		.page-contact-container h2 span {
+			height: 25px;
+			padding: 0px 18px;
+		}
+		.page-contact-container h2 span::before {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+/* ------------------- 生前整理の流れ ---------------------- */
+	.wp-block-vk-blocks-grid-column-item {
+		position: relative;
+	}
+	.wp-block-vk-blocks-grid-column-item span {
+		/* position: absolute;
+		top: -35px;
+		left: 0; */
+		display: inline-block;
+		padding: 0px 5px 5px 5px;
+		margin-right: 5px;
+		font-size: 14px;
+		background: white;
+		border-radius: 50%;
+		border: 1px dashed gray;
+	}
+	.wp-block-vk-blocks-grid-column-item span em {
+		color: blue;
+		font-size: 40px;
+		font-weight: bold;
+		font-style: italic;
+		filter: drop-shadow(1px 2px 2px gray);
+	}
+	.vk_flow_frame_text_title {
+		padding: 0 0px 5px 10px !important;
+	}
+	@media (min-width: 735px){/* タブレット以上 */
+		.vk_flow_frame_text_title span em {
+			/* font-size: 30px; */
+		}
+	}
+
+/* ------------------- お問い合わせ ---------------------- */
+	.contact-text {
+		text-align: center;
+		line-height: 1.5;
+		margin: 0 0 45px;
+	}
+	.c-form-table__row dt {
+		position: relative;
+		/* background-color: lightgray; */
+		padding: 10px 15px;
+		font-weight: bold;
+	}
+	.c-form-table__row dd {
+		padding: 18px 5px;
+		margin-inline-start: 0;
+	}
+	.c-form-table__last {
+		padding: 18px 5px 0;
+	}
+	.wpcf7-checkbox {
+		display: block;
+	}
+	.red-box_ttl {
+		font-size: 12px;
+		font-weight: bold;
+		color: white;
+		background-color: red;
+		padding: 1px 5px 3px;
+		margin-right: 5px;
+		border-radius: 5px;
+		line-height: 2;
+	}
+	.red-box {
+		position: absolute;
+		top: 8px;
+		right: 20px;
+		font-size: 12px;
+		font-weight: bold;
+		color: white;
+		background-color: red;
+		padding: 0px 8px 1px;
+		border-radius: 5px;
+		line-height: 2;
+	}
+	.c-contact {
+		text-align: center;
+		margin: 55px 0 10px;
+	}
+	.wpcf7-list-item {
+		display: inline-block;
+		margin: 0 0 0 .5em;
+	}
+	.wpcf7-list-item-label {
+		padding-left: .5em;
+	}
+	.wpcf7 .ajax-loader {
+		display: block !important;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 10px 0 0 !important;
+	}
+	@media (max-width: 414px){/* スマホ */
+		.contact-box {
+			padding: 25px 0;
+			margin: 0 auto 30px;
+		}
+		.c-form-table__row dt {
+			border-left: 2px dashed #007bff;
+		}
+		.wpcf7-text,
+		.wpcf7-textarea {
+			width: -webkit-fill-available;
+		}
+		.wpcf7-list-item {
+			display: block !important;
+		}
+	}
+	@media (min-width: 735px){/* タブレット以上 */
+		.contact-box {
+			width: 580px;
+			padding: 20px;
+			margin: 0 auto 82px;
+		}
+		.contact-text {
+			margin: 0px 0 60px;
+		}
+		.c-form,
+		.quote-box form h2 {
+			display: table;
+			width: 790px;
+			margin: 0 auto;
+		}
+		.c-form-table__row {
+			display: table-row;
+			width: 100%;
+		}
+		.c-form-table__row dt {
+			display: table-cell;
+			width: 25%;
+			padding: 30px 15px;
+			vertical-align: top;
+		}
+		.c-form-table__row dd {
+			display: table-cell;
+			padding: 21px 15px 15px;
+		}
+		.c-form-table__last {
+			padding: 21px 15px 15px;
+		}
+		.wpcf7-checkbox {
+			width: 55%;
+		}
+		.red-box {
+			top: 29px;
+			right: 15px;
+		}
+		.c-contact {
+			margin: 30px 0 15px;
+		}
+		.input__nomal {
+			width: 55% !important;
+		}
+		.input__middle {
+			width: 30% !important;
+		}
+	}
+	@media (min-width: 1000px){/* PC以上 */
+		.contact-box {
+			width: 950px;
+			padding: 40px;
+			margin-bottom: 50px;
+		}
+		.c-form-table__row dt {
+			width: 30%;
+			padding-top: 27px;
+		}
+		.wpcf7-checkbox {
+			width: 75%;
+		}
+		.red-box {
+			top: 28px;
+			right: 35px;
+		}
+		.input__nomal {
+			width: 90% !important;
+		}
+		.input__middle {
+			width: 50% !important;
+		}
+	}
+
+/* ------------------- お見積もりフォーム ---------------------- */
+.quote-box {
+}
+.quote-box form {
+}
+.quote-box form h2 {
+	background: #e7e7e7;
+}
+.quote-box .c-form-table__row {
+	/* border: 1px solid #f4b693; */
+}
+@media (max-width: 414px){/* スマホ */
+	.quote-box form h2 {
+		font-size: 18px;
+	}
+}
+@media (min-width: 735px){/* タブレット以上 */
+	.quote-box .c-form {
+		margin-bottom: 100px;
+	}
+	.quote-box form h2 {
+		margin: 30px auto 30px !important;
+	}
+	.quote-box .c-form-table__row {
+		border-bottom: 1px solid #f4b693;
+	}
+	.quote-box .c-form-table__row dt,
+	.quote-box .c-form-table__row dd {
+		border: 1px solid #f4b693;
+		border-top: none;
+	}
+	.quote-box .c-form-table__row:first-child dt,
+	.quote-box .c-form-table__row:first-child dd {
+		border-top: 1px solid #f4b693;
+	}
+	.quote-box .c-form-table__row dt {
+		border-right: none;
+	}
+}
+
+/* ------------------- ランニングページ ---------------------- */
+
+	.lp-contents-card-bg {
+		background: white !important;
+		border-radius: 5px !important;
+	}
+	.lp-contents-card-bg .vk_post_body {
+		padding-right: 5px !important;
+		padding-left: 5px !important;
+	}
+	@media (max-width: 414px){
+		.lp-contents-p {font-size:16px !important;}
+		.lp-contents-p-big {font-size:20px !important;}
+	}
+
+
+/* ------------------- 自作固定ページ ---------------------- */
+	.page-lp .page-header {
+		min-height: 480px;
+	}
+	@media (min-width: 735px){/* タブレット以上 */
+		.page-lp .page-header {
+			min-height: 320px;
+
+		}
+	}
+	/* 透明化 解除 */
+	.page-lp .page-header::before {
+		/* opacity: 0; */
+		min-height: 320px;
+	}
+	@media (min-width: 735px){/* タブレット以上 */
+		.page-lp .page-header::before{
+			min-height: 320px;
+		}
+	}
+	.page-body {
+		/* background: #333; */
+	}
+
+/* ------------------- サービス紹介ページ ---------------------- */
+	.contents-flex-reverse_columns {
+		flex-direction:row-reverse;
+	}
+	.area-subtitle {
+		font-size: 18px;
+	}
+	.area-text {
+		font-size: 16px;
+	}
+	.service-contents {
+	}
+
+
+	/* スマホ */
+	@media (max-width: 600px){
+		.area-subtitle {
+			font-size: 16px;
+		}
+		.area-text {
+			font-size: 14px;
+		}
+		.service-contents-pd-top {
+			padding-top: 20px;
+		}
+	}
+	/* タブレット */
+	@media (min-width: 600px) and (max-width: 781px){
+		.contents-flex-reverse_columns .wp-block-column:not(:first-child) {
+			margin-right: 2em;
+		}
+	}
+	/* パソコン */
+	@media (min-width: 782px){
+		.contents-flex-reverse_columns .wp-block-column:not(:first-child) {
+			margin-right: 2em;
+		}
+	}
+
+	
+	/* ------------------- ご利用までの流れ ---------------------- */
+
+	.flow-body {
+
+	}
+	.flow_text {
+		font-size: 14px;
+		text-align: center;
+		margin: 100px auto;
+	}
+	.flow_title {
+		/* width: 100%; */
+		color: #000000;
+		background: url(images/page/page-flow-title-bg.png) no-repeat center;
+		padding: 1em 0 0.85em;
+		text-align: center;
+		letter-spacing: 0.15em;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 1.2;
+		border-top:none;
+	}
+
+	/* タブレット以上 */
+	@media (min-width: 600px) {
+		.flow_title {
+			margin: 0 15px 50px !important;
+		}
+		.flow-body_inner {
+			margin-bottom: 100px;
+		}
+	}
+
+	.flow-body_inner {
+		width: 100%;
+		/* padding-bottom: 50px; */
+		counter-reset: number 0;
+	}
+	.flow-body_inner_counter2 {	counter-reset: number 3; }
+
+	.flow-item {
+		position: relative;
+		background: #ffffff;
+		padding: 10px 15px;
+		margin: 0 10px 20px;
+		border: 3px solid #F5B09C;
+		border-radius: 15px;
+		/* box-shadow: 0 5px 10px rgb(0 0 0 / 15%); */
+	}
+
+	/* ご利用の流れ　> .No */
+	.flow-item::before {
+		position: absolute;
+		counter-increment: number 1;      /* number カウンタの増加数をセット */
+		content: "0" counter(number) " ";      /* 表示形式 */
+		top: -2px;
+		left: -2px;
+		height: 60px;
+		width: 60px;
+		font-size: 26px;
+		font-weight: bold;
+		font-style: italic;
+		/* color: #EA6000; */
+		color: #ffffff;
+		background: #F5B09C;
+		text-align: center;
+		line-height: 2.4;
+		border-radius: 15px 0 15px 0;
+		padding-right: 5px;
+	}
+	/* ご利用の流れ　> 矢印 */
+	.flow-item::before {
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		height: 60px;
+		width: 60px;
+		font-size: 26px;
+		font-weight: bold;
+		font-style: italic;
+		/* color: #EA6000; */
+		color: #ffffff;
+		background: #F5B09C;
+		text-align: center;
+		line-height: 2.4;
+		border-radius: 15px 0 15px 0;
+		padding-right: 5px;
+	}
+	.flow-item:not(:last-child){
+		position:relative;
+		margin-bottom:100px;
+	}
+	.flow-item:not(:last-child)::after{
+		position: absolute;
+		content: "";
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		box-sizing: border-box;
+		border-style: solid;
+		border-width: 25px 25px 0px 25px;
+		bottom: -63px;
+		left: 50%;
+		margin-left: -25px;
+		border-color: #F5B09C transparent transparent transparent;
+	}
+
+	.flow-item_title {
+		font-size: 16px;
+	}
+
+	/* タブレット以上 */
+	@media (min-width: 600px){
+		.flow-item {
+			display: flex;
+			margin: 0 10px 30px;
+		}
+		.flow_title {
+			margin: 0 15px 20px;
+		}
+		.flow-item {
+			margin: 0 10px 30px;
+		}
+		.flow-item::before {
+			height: 80px;
+			width: 80px;
+			font-size: 36px;
+			line-height: 2.2;
+
+		}
+		.flow-item img { 
+			width: calc(50% - 20px);
+			padding: 5px 10px;
+		}
+		.flow-item_textbox {
+			padding: 5px 20px;
+		}
+		.flow_text {
+			font-size: 18px;
+			margin: 150px auto;
+		}
+		.flow_title {
+			font-size: 32px;
+		}
+		.flow-item_title {
+			font-size: 18px;
+		}
+	}
+	/* タブレット */
+	@media (min-width: 600px) and (max-width: 1100px){
+		.flow-item {
+			/* width: calc(50% - 20px); */
+			margin: 0 10px 80px;
+		}
+	}
+	/* タブレットからパソコンまで */
+	@media (min-width: 1100px){
+		.flow-item {
+			/* width: calc(50% - 20px); */
+			margin: 0 10px 100px;
+		}
+	}
+
+
+	/* ------------------- リクルート ---------------------- */
+
+	.recruit-body {
+
+	}
+	.recruit-body_title {
+		font-size: 16px;
+		text-align: center;
+		border: none; 
+	}
+	.recruit_text {
+		font-size: 14px;
+		text-align: center;
+		margin: 25px auto 60px;
+	}
+	.recruit-body_inner {
+
+	}
+	.page-recruit-contents-textBox {
+		padding: 0 5px;
+	}
+
+	/* スマホ */
+	@media (max-width: 600px){
+		
+	}
+	/* タブレット以上 */
+	@media (min-width: 600px){
+		.recruit-body_inner {
+			display: flex;
+		}
+		.recruit-body_title {
+			margin: 0 15px 20px;
+		}
+		.recruit-item {
+			width: calc(50% - 20px);
+			margin: 0 10px 20px;
+		}
+		.recruit-body_title {
+			font-size: 24px;
+		}
+		.recruit_text {
+			font-size: 18px;
+		}
+		.page-recruit-contents_right {
+			margin-left: 0 !important;
+		}
+		.page-recruit-contents_left {
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+		}
+		.page-recruit-contents-textBox {
+			padding: 0 25px;
+		}
+		.page-recruit-contents_img {
+			margin-bottom: 0;
+		}
+
+	}
+	/* タブレット */
+	@media (min-width: 600px) and (max-width: 781px){
+
+	}
+	/* パソコン */
+	@media (min-width: 782px){
+
+	}

@@ -360,6 +360,9 @@ Version: 0.1.2
 	@media (max-width: 414px){
 		.lp-contents-p {font-size:16px !important;}
 		.lp-contents-p-big {font-size:20px !important;}
+		.SP-pd-bottom {padding-bottom: 20px;}
+		.SP-pd-top {padding-top:20px;}
+		.SP-pd-top-60 {padding-top:60px;}
 	}
 
 
@@ -401,8 +404,35 @@ Version: 0.1.2
 	}
 
 
+
+	.service-title {
+		position:relative;
+	}
+	/* 晴れやか（青） */
+	.service-title__hareyaka:after {
+		position:absolute;
+		content:url('http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/service-blue.png');
+	}
+	/* よりそい（ピンク） */
+	.service-title__yorisoi:after {
+		position:absolute;
+		content:url('http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/service-pink.png') !important;
+	}
+
+
 	/* スマホ */
 	@media (max-width: 600px){
+
+		.service-title__hareyaka:after {
+			top: 0px;
+			left: 15%;
+		}
+		.service-title__yorisoi:after {
+			top: 0px;
+			left:2% !important;
+		}
+
+
 		.area-subtitle {
 			font-size: 16px;
 		}
@@ -413,23 +443,120 @@ Version: 0.1.2
 			padding-top: 20px;
 		}
 	}
-	/* タブレット */
-	@media (min-width: 600px) and (max-width: 781px){
+	/* ipad */
+	@media (min-width: 600px){
+
+		.service-title__hareyaka:after {
+			top:-18px;
+			left:16%;
+		}
+		.service-title__yorisoi:after {
+			top:-18px;
+			left:2% !important;
+		}
+		.contents-flex-reverse_columns .wp-block-column:not(:first-child) {
+			margin-right: 2em;
+		}
+		.yorisoi .wp-block-columns {
+			flex-wrap: nowrap !important;
+		}
+	}
+	/* ipad pro */
+	@media (min-width: 782px){
+		.service-title__hareyaka:after {
+			top:-18px;
+			left:24%;
+		}
+		.service-title__yorisoi:after {
+			top:-18px;
+			left:10% !important;
+		}
 		.contents-flex-reverse_columns .wp-block-column:not(:first-child) {
 			margin-right: 2em;
 		}
 	}
 	/* パソコン */
-	@media (min-width: 782px){
+	@media (min-width: 1200px){
+		.service-title__hareyaka:after {
+			top:-18px;
+			left:28%;
+		}
+		.service-title__yorisoi:after {
+			top:-18px;
+			left:17% !important;
+		}
 		.contents-flex-reverse_columns .wp-block-column:not(:first-child) {
 			margin-right: 2em;
 		}
 	}
-
 	
 	/* ------------------- ご利用までの流れ ---------------------- */
 
 	.flow-body {
+		padding-bottom:20px;
+	}
+	.caution-body {
+		padding: 50px 20px;
+		margin-bottom: 90px;
+	}
+	.caution-title {
+		/* margin-bottom: ; */
+		text-align: center;
+		border:none;
+	}
+	/* ul */
+	.cantion-items {
+		max-width: 1100px;
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+	}
+	/* li */
+	.cantion-item {
+		padding: 25px 15px 10px;
+		background: white;
+		border-radius: 5px;
+		margin-bottom: 30px;
+	}
+	.cantion-item__title {
+
+	}
+	.bgc-lightpink {
+		background: #ffece2;
+	}
+	/* iPad以上 */
+	@media (min-width: 414px) {
+		.flow-body{
+			padding-bottom:0px;
+		}
+		.caution-body {
+			margin-bottom: 100px;
+		}
+		.caution-title {
+			margin-bottom: ;
+
+		}
+		/* li */
+		.cantion-item {
+			margin: auto 30px 30px;
+		}
+
+	}
+	@media (min-width: 769px) {
+		.flow-body {
+			padding-bottom:10px;
+		}
+		.caution-body {
+			margin-bottom: 100px;
+		}
+		.caution-title {
+			margin-bottom: ;
+
+		}
+		/* ul */
+		.cantion-items {
+			max-width: 910px;
+		}
 
 	}
 	.flow_text {
@@ -438,9 +565,7 @@ Version: 0.1.2
 		margin: 100px auto;
 	}
 	.flow_title {
-		/* width: 100%; */
-		color: #000000;
-		background: url(images/page/page-flow-title-bg.png) no-repeat center;
+		background: url(images/page/page-flow-title-bg2.png) no-repeat center;
 		padding: 1em 0 0.85em;
 		text-align: center;
 		letter-spacing: 0.15em;
@@ -448,7 +573,11 @@ Version: 0.1.2
 		font-weight: bold;
 		line-height: 1.2;
 		border-top:none;
+		border-radius: 10px;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
+
 
 	/* タブレット以上 */
 	@media (min-width: 600px) {
@@ -534,7 +663,8 @@ Version: 0.1.2
 		border-color: #F5B09C transparent transparent transparent;
 	}
 
-	.flow-item_title {
+	.flow-item_title,
+	.cantion-item__title {
 		font-size: 16px;
 	}
 
@@ -571,7 +701,8 @@ Version: 0.1.2
 		.flow_title {
 			font-size: 32px;
 		}
-		.flow-item_title {
+		.flow-item_title,
+		.cantion-item__title {
 			font-size: 18px;
 		}
 	}

@@ -394,6 +394,7 @@ Version: 0.1.2
 	.contents-flex-reverse_columns {
 		flex-direction:row-reverse;
 	}
+
 	.area-subtitle {
 		font-size: 18px;
 	}
@@ -419,6 +420,17 @@ Version: 0.1.2
 		content:url('http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/service-pink.png') !important;
 	}
 
+			.yorisoi-title {
+				padding: 1.25em 0 !important;
+			}
+			/* キャラクター表示関連 */
+			.yorisoi-atenko,
+			.yorisoi-atenko-sanpo,
+			.hareyaka-atenko {
+				position: relative;
+			}
+
+
 
 	/* スマホ */
 	@media (max-width: 600px){
@@ -431,8 +443,6 @@ Version: 0.1.2
 			top: 0px;
 			left:2% !important;
 		}
-
-
 		.area-subtitle {
 			font-size: 16px;
 		}
@@ -442,6 +452,34 @@ Version: 0.1.2
 		.service-contents-pd-top {
 			padding-top: 20px;
 		}
+
+
+					/* よりそい */
+					.yorisoi-atenko::before {
+						position: absolute;
+						content: '';
+						top: -123px;
+						right: 25px;
+						display: inline-block;
+						background-image: url(https://attend-your-life.com/wp-content/uploads/2021/10/yorisoi-atenko-serihu@2x.png);
+						background-size: cover;
+						vertical-align: middle;
+						width: 215px;
+						height: 130px;
+					}
+					/* 晴れやか */
+					.hareyaka-atenko::before {
+						position: absolute;
+						content: '';
+						top: -120px;
+						left:  70px;
+						display: inline-block;
+						background-image: url(https://attend-your-life.com/wp-content/uploads/2021/10/hareyaka-atenko-serihu@2x.png);
+						background-size: cover;
+						vertical-align: middle;
+						width: 215px;
+						height: 130px;
+					}
 	}
 	/* ipad */
 	@media (min-width: 600px){
@@ -460,6 +498,35 @@ Version: 0.1.2
 		.yorisoi .wp-block-columns {
 			flex-wrap: nowrap !important;
 		}
+
+				/* よりそい */
+				.yorisoi-atenko::before {
+					position: absolute;
+					content: '';
+					top: -123px;
+					right: -35px;
+					display: inline-block;
+					background-image: url(https://attend-your-life.com/wp-content/uploads/2021/10/yorisoi-atenko-serihu@2x.png);
+					background-size: cover;
+					vertical-align: middle;
+					width: 215px;
+					height: 130px;
+				}
+
+
+				/* 晴れやか */
+				.hareyaka-atenko::before {
+					position: absolute;
+					content: '';
+					top: -120px;
+					left: 0px;
+					display: inline-block;
+					background-image: url(https://attend-your-life.com/wp-content/uploads/2021/10/hareyaka-atenko-serihu@2x.png);
+					background-size: cover;
+					vertical-align: middle;
+					width: 215px;
+					height: 130px;
+				}
 	}
 	/* ipad pro */
 	@media (min-width: 782px){
@@ -474,6 +541,8 @@ Version: 0.1.2
 		.contents-flex-reverse_columns .wp-block-column:not(:first-child) {
 			margin-right: 2em;
 		}
+
+
 	}
 	/* パソコン */
 	@media (min-width: 1200px){
@@ -488,6 +557,46 @@ Version: 0.1.2
 		.contents-flex-reverse_columns .wp-block-column:not(:first-child) {
 			margin-right: 2em;
 		}
+
+						/* よりそい */
+						.yorisoi-atenko::before {
+							position: absolute;
+							content: '';
+							top: -123px;
+							right: -75px;
+							display: inline-block;
+							background-image: url(https://attend-your-life.com/wp-content/uploads/2021/10/yorisoi-atenko-serihu@2x.png);
+							background-size: cover;
+							vertical-align: middle;
+							width: 215px;
+							height: 130px;
+						}
+						/* よりそいー散歩 */
+						.yorisoi-atenko-sanpo::before {
+							position: absolute;
+							content: '';
+							bottom: -23px;
+							right: 55px;
+							display: inline-block;
+							background-image: url(https://attend-your-life.com/wp-content/uploads/2021/10/atenko-sanpo@2x.png);
+							background-size: cover;
+							vertical-align: middle;
+							width: 215px;
+							height: 200px;
+						}
+						/* 晴れやか */
+						.hareyaka-atenko::before {
+							position: absolute;
+							content: '';
+							top: -120px;
+							left: 0px;
+							display: inline-block;
+							background-image: url(https://attend-your-life.com/wp-content/uploads/2021/10/hareyaka-atenko-serihu@2x.png);
+							background-size: cover;
+							vertical-align: middle;
+							width: 215px;
+							height: 130px;
+						}
 	}
 	
 	/* ------------------- ご利用までの流れ ---------------------- */
@@ -566,7 +675,6 @@ Version: 0.1.2
 	}
 	.flow_title {
 		background: url(images/page/page-flow-title-bg2.png) no-repeat center;
-		padding: 1em 0 0.85em;
 		text-align: center;
 		letter-spacing: 0.15em;
 		font-size: 24px;
@@ -576,6 +684,11 @@ Version: 0.1.2
 		border-radius: 10px;
 		margin-right: 10px;
 		margin-left: 10px;
+		text-shadow: 1px 1px white
+	}
+	.flow_title-b {
+		background: url(images/page/page-flow-title-bg2-b.png) no-repeat center !important;
+
 	}
 
 
@@ -605,6 +718,15 @@ Version: 0.1.2
 		border-radius: 15px;
 		/* box-shadow: 0 5px 10px rgb(0 0 0 / 15%); */
 	}
+	.flow-item-b {
+		position: relative;
+		background: #ffffff;
+		padding: 10px 15px;
+		margin: 0 10px 20px;
+		border: 3px solid #1b7fbe;
+		border-radius: 15px;
+		/* box-shadow: 0 5px 10px rgb(0 0 0 / 15%); */
+	}
 
 	/* ご利用の流れ　> .No */
 	.flow-item::before {
@@ -618,7 +740,6 @@ Version: 0.1.2
 		font-size: 26px;
 		font-weight: bold;
 		font-style: italic;
-		/* color: #EA6000; */
 		color: #ffffff;
 		background: #F5B09C;
 		text-align: center;
@@ -626,6 +747,25 @@ Version: 0.1.2
 		border-radius: 15px 0 15px 0;
 		padding-right: 5px;
 	}
+	.flow-item-b::before {
+		position: absolute;
+		counter-increment: number 1;      /* number カウンタの増加数をセット */
+		content: "0" counter(number) " ";      /* 表示形式 */
+		top: -2px;
+		left: -2px;
+		height: 60px;
+		width: 60px;
+		font-size: 26px;
+		font-weight: bold;
+		font-style: italic;
+		color: #ffffff;
+		background: #1b7fbe;
+		text-align: center;
+		line-height: 2.4;
+		border-radius: 15px 0 15px 0;
+		padding-right: 5px;
+	}
+
 	/* ご利用の流れ　> 矢印 */
 	.flow-item::before {
 		position: absolute;
@@ -636,7 +776,6 @@ Version: 0.1.2
 		font-size: 26px;
 		font-weight: bold;
 		font-style: italic;
-		/* color: #EA6000; */
 		color: #ffffff;
 		background: #F5B09C;
 		text-align: center;
@@ -644,11 +783,30 @@ Version: 0.1.2
 		border-radius: 15px 0 15px 0;
 		padding-right: 5px;
 	}
-	.flow-item:not(:last-child){
+	.flow-item-b::before {
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		height: 60px;
+		width: 60px;
+		font-size: 26px;
+		font-weight: bold;
+		font-style: italic;
+		color: #ffffff;
+		background: #1b7fbe;
+		text-align: center;
+		line-height: 2.4;
+		border-radius: 15px 0 15px 0;
+		padding-right: 5px;
+	}
+
+	.flow-item:not(:last-child),
+	.flow-item-b:not(:last-child){
 		position:relative;
 		margin-bottom:100px;
 	}
-	.flow-item:not(:last-child)::after{
+
+	.flow-item:not(:last-child)::after {
 		position: absolute;
 		content: "";
 		display: inline-block;
@@ -662,32 +820,53 @@ Version: 0.1.2
 		margin-left: -25px;
 		border-color: #F5B09C transparent transparent transparent;
 	}
+	.flow-item-b:not(:last-child)::after{
+		position: absolute;
+		content: "";
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		box-sizing: border-box;
+		border-style: solid;
+		border-width: 25px 25px 0px 25px;
+		bottom: -63px;
+		left: 50%;
+		margin-left: -25px;
+		border-color: #1b7fbe transparent transparent transparent;
+	}
 
 	.flow-item_title,
 	.cantion-item__title {
 		font-size: 16px;
 	}
+	.flow-item-b .flow-item_title:after {
+		border-bottom: 1px solid #1b7fbe;
+	}
 
 	/* タブレット以上 */
 	@media (min-width: 600px){
-		.flow-item {
+		.flow-item,
+		.flow-item-b {
 			display: flex;
 			margin: 0 10px 30px;
 		}
 		.flow_title {
 			margin: 0 15px 20px;
 		}
-		.flow-item {
+		.flow-item,
+		.flow-item-b {
 			margin: 0 10px 30px;
 		}
-		.flow-item::before {
+		.flow-item::before,
+		.flow-item-b::before {
 			height: 80px;
 			width: 80px;
 			font-size: 36px;
 			line-height: 2.2;
 
 		}
-		.flow-item img { 
+		.flow-item img,
+		.flow-item-b img { 
 			width: calc(50% - 20px);
 			padding: 5px 10px;
 		}
@@ -708,14 +887,21 @@ Version: 0.1.2
 	}
 	/* タブレット */
 	@media (min-width: 600px) and (max-width: 1100px){
-		.flow-item {
+		.flow-item,
+		.flow-item-b {
 			/* width: calc(50% - 20px); */
 			margin: 0 10px 80px;
 		}
 	}
 	/* タブレットからパソコンまで */
 	@media (min-width: 1100px){
-		.flow-item {
+		.flow_title {
+			padding: 1em 0 0.85em;
+		}
+
+
+		.flow-item,
+		.flow-item-b {
 			/* width: calc(50% - 20px); */
 			margin: 0 10px 100px;
 		}

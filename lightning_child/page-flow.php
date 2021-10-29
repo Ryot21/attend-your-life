@@ -55,56 +55,8 @@
 				</section><!-- [ /flow-body ] -->
 
 				<section class="flow-body">
-					<h2 class="flow_title">晴れやか整理</h2>
-					<div class="flow-body_inner">
-						<!-- ステップ1 -->
-						<div class="flow-item">
-							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/4191330_s.jpg" alt="ステップ1">
-							<div class="flow-item_textbox">
-								<h3 class="flow-item_title">お申し込み</h3>
-								<p>電話・もしくはLINEにて申し込みをお願いします。</p>
-								<div class="contact-btn" style="text-align: center; padding-bottom: 10px;"><a href="https://lin.ee/8uvKBjK" class="btn btn-primary"><i class="far fa-envelope"></i>LINEでお問い合わせ</a></div>
-							</div>
-						</div>
-						<!-- ステップ2 -->
-						<div class="flow-item">
-							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/09/IMGP7465.jpg" alt="ステップ2">
-							<div class="flow-item_textbox">
-								<h3 class="flow-item_title">無料相談</h3>
-								<p>アテンドユアライフの生前整理診断士がご自宅に伺います。<br>
-								ご要望・心配などお聞かせください。<br>
-								ご相談時間は一時間半程度です。</p>
-							</div>
-						</div>
-						<!-- ステップ3 -->
-						<div class="flow-item">
-							<img src="https://attend-your-life.com/wp-content/uploads/2021/10/IMGP7679.jpg" alt="ステップ3">
-							<div class="flow-item_textbox">
-								<h3 class="flow-item_title">整理作業日の決定</h3>
-								<p>整理作業の予定を決めます。<br>
-								部屋の間取りなどにより必要な日数・時間は異なります。</p>
-							</div>
-						</div>
-						<!-- ステップ4 -->
-						<div class="flow-item">
-							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/IMGP7636.jpg" alt="ステップ4">
-							<div class="flow-item_textbox">
-								<h3 class="flow-item_title">整理作業実施</h3>
-								<p>二人以上の有資格スタッフが伺います。<br>
-								※量が多いなどの場合、作業終了時に次の整理作業日を決定</p>
-							</div>
-						</div>
-						<!-- ステップ5 -->
-						<div class="flow-item">
-							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/IMGP7462.jpg" alt="ステップ5">
-							<div class="flow-item_textbox">
-								<h3 class="flow-item_title">レポート</h3>
-								<p>作業の内容をまとめてお渡しします。</p>
-							</div>
-						</div>
-					</div>
 
-					<h2 class="flow_title" style="margin-top:50px !important;">よりそい家事サポート</h2>
+					<h2 class="flow_title">よりそい家事サポート</h2>
 					<div class="flow-body_inner">
 						<!-- ステップ1 -->
 						<div class="flow-item">
@@ -126,6 +78,56 @@
 							</div>
 						</div>
 
+					</div>
+
+
+					<h2 class="flow_title flow_title-b" style="margin-top:50px !important;">晴れやか整理</h2>
+					<div class="flow-body_inner">
+						<!-- ステップ1 -->
+						<div class="flow-item-b">
+							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/4191330_s.jpg" alt="ステップ1">
+							<div class="flow-item_textbox">
+								<h3 class="flow-item_title">お申し込み</h3>
+								<p>電話・もしくはLINEにて申し込みをお願いします。</p>
+								<div class="contact-btn" style="text-align: center; padding-bottom: 10px;"><a href="https://lin.ee/8uvKBjK" class="btn btn-primary"><i class="far fa-envelope"></i>LINEでお問い合わせ</a></div>
+							</div>
+						</div>
+						<!-- ステップ2 -->
+						<div class="flow-item-b">
+							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/09/IMGP7465.jpg" alt="ステップ2">
+							<div class="flow-item_textbox">
+								<h3 class="flow-item_title">無料相談</h3>
+								<p>アテンドユアライフの生前整理診断士がご自宅に伺います。<br>
+								ご要望・心配などお聞かせください。<br>
+								ご相談時間は一時間半程度です。</p>
+							</div>
+						</div>
+						<!-- ステップ3 -->
+						<div class="flow-item-b">
+							<img src="https://attend-your-life.com/wp-content/uploads/2021/10/IMGP7679.jpg" alt="ステップ3">
+							<div class="flow-item_textbox">
+								<h3 class="flow-item_title">整理作業日の決定</h3>
+								<p>整理作業の予定を決めます。<br>
+								部屋の間取りなどにより必要な日数・時間は異なります。</p>
+							</div>
+						</div>
+						<!-- ステップ4 -->
+						<div class="flow-item-b">
+							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/IMGP7636.jpg" alt="ステップ4">
+							<div class="flow-item_textbox">
+								<h3 class="flow-item_title">整理作業実施</h3>
+								<p>二人以上の有資格スタッフが伺います。<br>
+								※量が多いなどの場合、作業終了時に次の整理作業日を決定</p>
+							</div>
+						</div>
+						<!-- ステップ5 -->
+						<div class="flow-item-b">
+							<img src="http://attend-life.dev-webitch.xyz/wp-content/uploads/2021/10/IMGP7462.jpg" alt="ステップ5">
+							<div class="flow-item_textbox">
+								<h3 class="flow-item_title">レポート</h3>
+								<p>作業の内容をまとめてお渡しします。</p>
+							</div>
+						</div>
 					</div>
 
 				</section><!-- [ /flow-body ] -->
@@ -170,8 +172,7 @@
 		<li class="cantion-item">
 			<h3 class="cantion-item__title">ごみの処分について</h3>
 			<p>
-			ごみの処分につきましては原則ご利用者様に行っていただきますことをご了承ください。
-			リサイクル・委託などは承っておりませんので、ご自身での処分をお願いいたします。リサイクルショップなどの業者のご案内は便宜させていただきますが、ご利用者様の責任により行っていただきます。
+			晴れやか整理ではごみの処分につきましては原則ご利用者様に行っていただきますことをご了承ください。 リサイクル・委託などは承っておりませんので、ご自身での処分をお願いいたします。リサイクルショップなどの業者のご案内は便宜させていただきますが、ご利用者様の責任により行っていただきます。
 			</p>
 		</li>
 		<li class="cantion-item">
